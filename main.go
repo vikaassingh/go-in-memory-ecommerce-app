@@ -25,8 +25,8 @@ func main() {
 	r.GET("/api/user", userService.GetAll)
 
 	// ProductService
-	r.GET("/api/products/:id", productService.Get)
-	r.GET("/api/products", productService.GetAll)
+	r.GET("/api/product/:id", productService.Get)
+	r.GET("/api/product", productService.GetAll)
 
 	// CartService
 	r.PATCH("/api/cart/add", cartService.AddItem)
